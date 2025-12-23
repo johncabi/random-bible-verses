@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Bible Verse</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./js/index.js" defer></script>
+  </head>
+  <body
+    class="flex min-h-screen items-center justify-center bg-slate-100 text-slate-800 max-md:min-h-[90vh]"
+  >
+    <div class="flex w-[80%] flex-col items-start justify-center gap-4 p-7">
+      <h1 class="text-3xl font-bold max-md:text-2xl">Random Bible Verse</h1>
+      <span
+        id="bible-verse-span"
+        class="text-justify font-serif wrap-break-word"
+        >Bible verse goes here!</span
+      >
+      <button
+        class="cursor-pointer rounded-md border border-blue-300 bg-blue-500 p-2 text-slate-50"
+        onclick="fetchNewVerse()"
+      >
+        Refresh
+      </button>
+    </div>
+  </body>
+</html>

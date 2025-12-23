@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+:root {
+  -webkit-tap-highlight-color: inherit;
+  --font-sans: "Montserrat";
+  --font-serif: "Lora";
+}
