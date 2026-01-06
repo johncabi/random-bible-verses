@@ -12,7 +12,10 @@
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-slate-50: oklch(98.4% 0.003 247.858);
     --color-slate-100: oklch(96.8% 0.007 247.896);
+    --color-slate-300: oklch(86.9% 0.022 252.894);
     --color-slate-800: oklch(27.9% 0.041 260.031);
+    --color-gray-300: oklch(87.2% 0.01 258.338);
+    --color-gray-400: oklch(70.7% 0.022 261.325);
     --spacing: 0.25rem;
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
@@ -244,6 +247,26 @@
   }
   .text-slate-800 {
     color: var(--color-slate-800);
+  }
+  .disabled\:border-gray-300 {
+    &:disabled {
+      border-color: var(--color-gray-300);
+    }
+  }
+  .disabled\:border-gray-400 {
+    &:disabled {
+      border-color: var(--color-gray-400);
+    }
+  }
+  .disabled\:bg-slate-300 {
+    &:disabled {
+      background-color: var(--color-slate-300);
+    }
+  }
+  .disabled\:text-slate-800 {
+    &:disabled {
+      color: var(--color-slate-800);
+    }
   }
   .max-md\:min-h-\[90vh\] {
     @media (width < 48rem) {
