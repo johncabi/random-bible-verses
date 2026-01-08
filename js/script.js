@@ -1,7 +1,8 @@
 const bibleVerseSpan = document.getElementById("bible-verse-span");
 const fetchNewVerseButton = document.getElementById("fetch-new-verse-button");
 
-fetchNewVerseButton.addEventListener("click", fetchNewVerse)
+fetchNewVerseButton.addEventListener("click", fetchNewVerse);
+bibleVerseSpan.textContent = "Loading...";
 
 async function fetchNewVerse() {
   fetchNewVerseButton.disabled = true;
@@ -17,7 +18,7 @@ async function fetchNewVerse() {
     bibleVerseSpan.innerHTML = result;
     fetchNewVerseButton.disabled = false;
   } catch (error) {
-    throw error
+    throw error;
   }
 }
 
