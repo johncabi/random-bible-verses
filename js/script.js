@@ -2,9 +2,9 @@ const bibleVerseSpan = document.getElementById("bible-verse-span");
 const fetchNewVerseButton = document.getElementById("fetch-new-verse-button");
 
 fetchNewVerseButton.addEventListener("click", fetchNewVerse);
-bibleVerseSpan.textContent = "Loading...";
 
 async function fetchNewVerse() {
+  bibleVerseSpan.textContent = "Loading...";
   fetchNewVerseButton.disabled = true;
 
   try {
