@@ -1,7 +1,35 @@
 @import "tailwindcss";
 
 :root {
-  -webkit-tap-highlight-color: inherit;
-  --font-sans: "Montserrat";
-  --font-serif: "Lora";
+    -webkit-tap-highlight-color: inherit;
+    --font-sans: "Montserrat";
+    --font-serif: "Lora";
+}
+
+.links {
+    @apply underline cursor-pointer;
+}
+
+.btn-primary {
+    @apply cursor-pointer rounded-md border border-blue-300 bg-blue-500 p-2 text-neutral-50 disabled:bg-slate-300 disabled:text-neutral-800 disabled:border-gray-400;
+}
+
+.btn-secondary {
+    @apply cursor-pointer rounded-md border border-neutral-100 bg-neutral-200 p-2 text-neutral-950;
+}
+
+.desktop-nav {
+    @apply sm:flex max-sm:hidden;
+}
+
+.mobile-nav {
+    @apply max-sm:flex sm:hidden flex gap-3 items-center;
+}
+
+.modal {
+    @apply fixed top-0 bottom-0 left-0 right-0;
+}
+
+.modal-content {
+    @apply flex items-center justify-center min-h-[90vh];
 }
